@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+</head>
+<body>
+
+	<h1 id="getText" onmouseenter="changeText()" onmouseleave="changeText1()">computer </h1>
+
+	<script type="text/javascript">
+		
+		function changeText()
+		{
+			var h1_tag  = document.getElementById('getText');
+			
+
+			h1_tag.innerHTML =" computer"
+			h1_tag.style ="color:purple"
+			
+		}
+
+
+		function changeText1()
+		{
+			var h1_tag  = document.getElementById('getText');
+
+			h1_tag.innerHTML ="my web"
+			h1_tag.style ="color:red"
+		}
+	</script>
+
+</body>
+</html>

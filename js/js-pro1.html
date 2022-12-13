@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js-pro1</title>
+</head>
+<body>
+	<input type="name" name="" value="1200" id="price_val">
+
+
+
+	<select id="qty_val" onchange="gteprice()">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+
+	</select>
+
+	<span id="res"></span>
+
+	<script type="text/javascript">
+		
+		function gteprice()
+		{
+			 var price =document.getElementById('price_val');
+		    var qty = document.getElementById('qty_val');
+		    console.log(price.value)
+
+		    var totalprice = price.value * qty.value;
+
+		   document.getElementById('res').innerHTML = totalprice;	
+
+		}
+	</script>
+</body>
+</html>

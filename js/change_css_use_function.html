@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz 
+        {
+            color: red;
+            padding: 34px 20px;
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1_tag" onclick="applyCSS()"> Radhika </h1>
+    <input type="submit" value="Apply CSS" onclick="applyCSS()">
+
+    
+
+    <h4 id="h4_tag">my computer </h4>
+
+    <script>
+
+       function applyCSS()
+       {
+
+        var h1=  document.getElementById('h1_tag');
+        console.log(h1)
+        h1.style.background ="lightblue";
+        h1.classList.add('xyz');
+
+         var h4=  document.getElementById('h4_tag');
+        console.log(h4)
+        h4.style.background ="lightblue";
+        h4.classList.add('xyz');
+
+
+
+       }
+       //applyCSS()
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch_case</title>
+</head>
+<body>
+    <!-- Switch : when we have multiple choices and we need output as per choice entered
+Syntax:
+    switch(variable)
+    {
+        case 1: ...code;
+        break;
+        case 2: ...code;
+        break;
+        case 3: ...code;
+        break;
+
+        default: ...code;
+    } -->
+
+    <script>
+
+        choice=1;
+        num1=67,num2=190,num3=10;
+
+        switch(choice)
+        {
+            case 1: 
+
+               if(num1>num2)
+                {
+                    if(num1>num3)
+                    {
+                        document.write(num1)
+                    }
+                    else{
+                        document.write(num3)
+                    }
+
+                }
+                else if(num2>num3)
+                {
+                    document.write(num2)
+                        
+                }
+                else{
+                    document.write(num3)
+                }
+
+
+            break;
+
+            case 2: document.write("CASE 2");
+            break;
+
+            case 3: document.write("CASE 3");
+            break;
+
+            default:document.write("Invalid Choice...!");
+        }
+    </script>
+</body>
+</html>

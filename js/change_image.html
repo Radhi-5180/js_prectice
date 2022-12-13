@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change img</title>
+</head>
+<body>
+        <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="" height="300px" width="300px" id="img_car">
+    <br>
+    <br>
+    <button id="click" onclick="changeImg()">Second img</button>
+
+    <script>
+        var change_img = document.getElementById("click");
+        var img1 = document.getElementById("img_car");
+
+        function changeImg(){
+            if()
+            {
+                img1.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIY_3CC3riDYXyc-vIf5JMF5mnH3ju5J-k_tn_pEzK&s";
+                change_img.innerHTML = "First img"
+            }
+            else{
+                img1.src = "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=";
+                change_img.innerHTML = "Second img"
+            }
+        }
+    </script>
+</body>
+</html>

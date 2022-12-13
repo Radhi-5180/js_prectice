@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .x 
+        {
+            background-color: olive;
+            color:pink;
+            padding: 20px 50px;
+            font-size: 120px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="pre1" >my computer </h1>
+    <h4 id="pre2" > hello word </h4>
+
+    <script>
+      
+        var h1 = document.getElementById("pre1");
+        var h4 = document.getElementById("pre2");
+
+        document.write(h1.id)
+        // h1.style.background = "blue";
+        // document.getElementById("pre1").style.color ="#fff"
+        // h1.style.padding="23px 45px ";
+        // h1.style.fontSize ="120px"
+
+        h1.classList.add('x');
+        h4.classList.add('x');
+        h1.classList.remove('x');
+        h1.classList.add('x');
+
+
+    </script>
+    
+</body>
+</html>
